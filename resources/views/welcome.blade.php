@@ -41,15 +41,15 @@
             <!-- Stats Preview -->
             <div class="flex justify-center items-center gap-8 text-sm text-gray-500 mb-8">
                 <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+                    <x-lucide-hat-glasses class="w-4 h-4 text-blue-400" />
                     {{ __('landing.anonymous') }}
                 </div>
                 <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                    <x-lucide-clock class="w-4 h-4 text-green-400" />
                     {{ __('landing.duration') }}
                 </div>
                 <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 bg-purple-400 rounded-full"></div>
+                    <x-lucide-earth class="w-4 h-4 text-purple-400" />
                     {{ __('landing.international') }}
                 </div>
             </div>
@@ -58,184 +58,9 @@
         <!-- Survey Types Grid -->
         <div class="grid md:grid-cols-3 gap-8 mb-16">
             <!-- Students Card -->
-            <div
-                class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
-                <div
-                    class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-bl-full -translate-y-16 translate-x-16 group-hover:scale-110 transition-transform duration-500">
-                </div>
-
-                <div class="relative z-10">
-                    <div
-                        class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span class="text-2xl">🎓</span>
-                    </div>
-
-                    <h3 class="font-heading text-2xl font-bold text-gray-900 mb-4">
-                        {{ __('landing.students.title') }}
-                    </h3>
-
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        {{ __('landing.students.description') }}
-                    </p>
-
-                    <ul class="text-sm text-gray-500 space-y-2 mb-8">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.students.point_1') }}
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.students.point_2') }}
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.students.point_3') }}
-                        </li>
-                    </ul>
-
-                    <a href="{{ route('survey', ['id' => 'students-' . date('Y')]) }}"
-                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2 group/btn">
-                        {{ __('landing.start_survey') }}
-                        <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- IT Professionals Card -->
-            <div
-                class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-green-300 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
-                <div
-                    class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-50 to-emerald-100 rounded-bl-full -translate-y-16 translate-x-16 group-hover:scale-110 transition-transform duration-500">
-                </div>
-
-                <div class="relative z-10">
-                    <div
-                        class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span class="text-2xl">💻</span>
-                    </div>
-
-                    <h3 class="font-heading text-2xl font-bold text-gray-900 mb-4">
-                        {{ __('landing.professionals.title') }}
-                    </h3>
-
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        {{ __('landing.professionals.description') }}
-                    </p>
-
-                    <ul class="text-sm text-gray-500 space-y-2 mb-8">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.professionals.point_1') }}
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.professionals.point_2') }}
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.professionals.point_3') }}
-                        </li>
-                    </ul>
-
-                    <a href="{{ route('survey', ['id' => 'professionals-' . date('Y')]) }}"
-                        class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2 group/btn">
-                        {{ __('landing.start_survey') }}
-                        <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Other Professionals Card -->
-            <div
-                class="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-purple-300 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
-                <div
-                    class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-50 to-violet-100 rounded-bl-full -translate-y-16 translate-x-16 group-hover:scale-110 transition-transform duration-500">
-                </div>
-
-                <div class="relative z-10">
-                    <div
-                        class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span class="text-2xl">🚀</span>
-                    </div>
-
-                    <h3 class="font-heading text-2xl font-bold text-gray-900 mb-4">
-                        {{ __('landing.others.title') }}
-                    </h3>
-
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        {{ __('landing.others.description') }}
-                    </p>
-
-                    <ul class="text-sm text-gray-500 space-y-2 mb-8">
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.others.point_1') }}
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.others.point_2') }}
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <svg class="w-4 h-4 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            {{ __('landing.others.point_3') }}
-                        </li>
-                    </ul>
-
-                    <a href="{{ route('survey', ['id' => 'others-' . date('Y')]) }}"
-                        class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2 group/btn">
-                        {{ __('landing.start_survey') }}
-                        <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-200"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+            <x-landing-page-survery-card key="students" />
+            <x-landing-page-survery-card key="professionals" />
+            <x-landing-page-survery-card key="others" />
         </div>
 
         <!-- Why Participate Section -->

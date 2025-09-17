@@ -34,5 +34,22 @@ return [
         'point_3'     => 'Career preparation insights'
     ],
 
-    // ... more translations
+    'why_participate' => [
+        'title'       => 'Why Participate?',
+        'subtitle'    => 'Your insights help build a comprehensive understanding of Generative AI usage across different sectors.',
+        'insight_title' => 'Insights for AI Education',
+        'insight_desc'  => 'Your responses contribute to creating better learning materials and teaching methods for AI.',
+        'privacy_title' => 'Privacy & Security',
+        'privacy_desc'  => 'Your data is handled with care and in compliance with GDPR.',
+        'community_title' => 'Global Community',
+        'community_desc'  => 'Your participation helps create a global understanding of AI usage.',
+    ],
+
+    'footer' => [
+        'privacy'   => 'Privacy Policy',
+        'terms'     => 'Terms of Service',
+        'contact'   => 'Contact Us',
+        'github'    => 'GitHub',
+        'copyright' => '© 2025 State of Generative AI',
+    ],
 ];
