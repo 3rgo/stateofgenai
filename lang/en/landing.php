@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 // Example translation structure
 return [
     'title'         => 'State of Generative AI',
@@ -15,7 +17,7 @@ return [
         'description' => 'Students in computer science, development, and tech fields.',
         'point_1'     => 'Learning methodology with Generative AI',
         'point_2'     => 'Academic usage patterns',
-        'point_3'     => 'Career preparation insights'
+        'point_3'     => 'Career preparation insights',
     ],
 
     'professionals' => [
@@ -23,7 +25,7 @@ return [
         'description' => 'IT professionals in development, sysadmin, data science, and other fields.',
         'point_1'     => 'Professional usage patterns',
         'point_2'     => 'Work methods with Generative AI',
-        'point_3'     => 'Career preparation insights'
+        'point_3'     => 'Career preparation insights',
     ],
 
     'others' => [
@@ -31,16 +33,16 @@ return [
         'description' => 'Other professionals in marketing, content creation, design, and other fields.',
         'point_1'     => 'Professional usage patterns',
         'point_2'     => 'Work methods with Generative AI',
-        'point_3'     => 'Career preparation insights'
+        'point_3'     => 'Career preparation insights',
     ],
 
     'why_participate' => [
-        'title'       => 'Why Participate?',
-        'subtitle'    => 'Your insights help build a comprehensive understanding of Generative AI usage across different sectors.',
-        'insight_title' => 'Insights for AI Education',
-        'insight_desc'  => 'Your responses contribute to creating better learning materials and teaching methods for AI.',
-        'privacy_title' => 'Privacy & Security',
-        'privacy_desc'  => 'Your data is handled with care and in compliance with GDPR.',
+        'title'           => 'Why Participate?',
+        'subtitle'        => 'Your insights help build a comprehensive understanding of Generative AI usage across different sectors.',
+        'insight_title'   => 'Insights for AI Education',
+        'insight_desc'    => 'Your responses contribute to creating better learning materials and teaching methods for AI.',
+        'privacy_title'   => 'Privacy & Security',
+        'privacy_desc'    => 'Your data is handled with care and in compliance with GDPR.',
         'community_title' => 'Global Community',
         'community_desc'  => 'Your participation helps create a global understanding of AI usage.',
     ],

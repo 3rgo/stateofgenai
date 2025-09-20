@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
-class Participant extends Model
+final class Participant extends Model
 {
     use Notifiable;
 
@@ -18,7 +20,8 @@ class Participant extends Model
         'send_results',
     ];
 
-    protected function casts(): array{
+    protected function casts(): array
+    {
         return [
             'longitudinal_tracking' => 'boolean',
             'send_results'          => 'boolean',
