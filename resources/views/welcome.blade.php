@@ -23,44 +23,47 @@
     </div>
 
     <div class="w-full max-w-6xl mx-auto">
-        <!-- Header Section -->
-        <div class="text-center mb-16">
-            <div class="mb-8">
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-6">
-                    🤖 {{ __('landing.year_badge', ['year' => date('Y')]) }}
+        <!-- Hero Section -->
+        <div class="min-h-screen flex flex-col justify-evenly items-center space-y-8 mb-16">
+            <!-- Header Section -->
+            <div class="text-center space-y-8">
+                <div class="space-y-6">
+                    <div class="flex items-center justify-center">
+                        <img src="logo.png" alt="State of Gen. AI" class="w-36 h-36" />
+                    </div>
+                    <h1 class="font-heading text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                        {{ __('landing.title') }}
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        {{ __('landing.subtitle') }}
+                    </p>
                 </div>
-                <h1 class="font-heading text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                    {{ __('landing.title') }}
-                </h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    {{ __('landing.subtitle') }}
-                </p>
+
+                <!-- Stats Preview -->
+                <div class="flex justify-center items-center gap-8 text-sm text-gray-500">
+                    <div class="flex items-center gap-2">
+                        <x-lucide-hat-glasses class="w-4 h-4 text-blue-400" />
+                        {{ __('landing.anonymous') }}
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <x-lucide-clock class="w-4 h-4 text-green-400" />
+                        {{ __('landing.duration') }}
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <x-lucide-earth class="w-4 h-4 text-purple-400" />
+                        {{ __('landing.international') }}
+                    </div>
+                </div>
             </div>
 
-            <!-- Stats Preview -->
-            <div class="flex justify-center items-center gap-8 text-sm text-gray-500 mb-8">
-                <div class="flex items-center gap-2">
-                    <x-lucide-hat-glasses class="w-4 h-4 text-blue-400" />
-                    {{ __('landing.anonymous') }}
-                </div>
-                <div class="flex items-center gap-2">
-                    <x-lucide-clock class="w-4 h-4 text-green-400" />
-                    {{ __('landing.duration') }}
-                </div>
-                <div class="flex items-center gap-2">
-                    <x-lucide-earth class="w-4 h-4 text-purple-400" />
-                    {{ __('landing.international') }}
-                </div>
+            <!-- Survey Types Grid -->
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Students Card -->
+                <x-landing-page-survery-card key="students" />
+                <x-landing-page-survery-card key="professionals" />
+                <x-landing-page-survery-card key="others" />
             </div>
-        </div>
 
-        <!-- Survey Types Grid -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-            <!-- Students Card -->
-            <x-landing-page-survery-card key="students" />
-            <x-landing-page-survery-card key="professionals" />
-            <x-landing-page-survery-card key="others" />
         </div>
 
         <!-- Why Participate Section -->

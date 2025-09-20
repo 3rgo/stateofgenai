@@ -50,6 +50,6 @@ return [
         'terms'     => 'Terms of Service',
         'contact'   => 'Contact Us',
         'github'    => 'GitHub',
-        'copyright' => '© 2025 State of Generative AI',
+        'copyright' => 'StateOfGenAI.info',
     ],
 ];
