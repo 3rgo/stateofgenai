@@ -19,7 +19,7 @@
     @livewireStyles
 </head>
 
-<body class="flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
+<body class="max-w-7xl mx-auto flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
 
     {{ $slot }}
 

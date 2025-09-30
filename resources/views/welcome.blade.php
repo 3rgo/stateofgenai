@@ -29,10 +29,10 @@
             <div class="text-center space-y-8">
                 <div class="space-y-6">
                     <div class="flex items-center justify-center">
-                        <img src="logo.png" alt="State of Gen. AI" class="w-36 h-36" />
+                        <img src="/logo.png" alt="State of Gen. AI" class="w-36 h-36" />
                     </div>
                     <h1 class="font-heading text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-                        {{ __('landing.title') }}
+                        {{ config('app.name') }}
                     </h1>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         {{ __('landing.subtitle') }}
@@ -59,9 +59,9 @@
             <!-- Survey Types Grid -->
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- Students Card -->
-                <x-landing-page-survery-card key="students" />
-                <x-landing-page-survery-card key="professionals" />
-                <x-landing-page-survery-card key="others" />
+                <x-landing-page-survery-card key="student" />
+                <x-landing-page-survery-card key="professional" />
+                <x-landing-page-survery-card key="other" />
             </div>
 
         </div>

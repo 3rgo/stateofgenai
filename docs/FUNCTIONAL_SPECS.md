@@ -83,7 +83,9 @@ Each survey type uses a multi-step wizard approach to improve user experience:
 
 #### 3.1.2 IT Professionals Survey (6 Steps)
 **Step 1: Profile (6 questions)**
+- Country
 - Birth year
+- Gender
 - Professional status (Employee/Freelance/Executive/Consultant)
 - IT experience years (0-2/3-5/6-10/11-15/16-20/20+)
 - Main domain (Web dev/Mobile/Data-AI/DevOps/Cybersecurity/Architecture/Management/Other)

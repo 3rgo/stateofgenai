@@ -2,7 +2,7 @@
 
 @php
     [$wrapperClass, $cornerClass, $icon, $iconClass, $checkClass, $buttonClass] = match ($key) {
-        'students' => [
+        'student' => [
             'hover:border-blue-300',
             'from-blue-50 to-indigo-100',
             '🎓',
@@ -10,7 +10,7 @@
             'text-blue-500',
             'bg-blue-600 hover:bg-blue-700',
         ],
-        'professionals' => [
+        'professional' => [
             'hover:border-green-300',
             'from-green-50 to-emerald-100',
             '💻',
@@ -18,7 +18,7 @@
             'text-green-500',
             'bg-green-600 hover:bg-green-700',
         ],
-        'others' => [
+        'other' => [
             'hover:border-purple-300',
             'from-purple-50 to-violet-100',
             '🚀',
@@ -73,7 +73,7 @@
             </li>
         </ul>
 
-        <a href="{{ route('survey', ['id' => $key . '-' . date('Y')]) }}" @class([
+        <a href="{{ route('survey', ['surveyType' => $key]) }}" @class([
             'w-full text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2 group/btn',
             $buttonClass,
         ])>

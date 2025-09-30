@@ -10,4 +10,4 @@ Route::view('/privacy', 'privacy')->name('privacy');
 Route::view('/terms', 'terms')->name('terms');
 Route::view('/contact', 'contact')->name('contact');
 
-Route::get('/survey/{id}', SurveyController::class)->name('survey');
+Route::get('/survey/{surveyType}', SurveyController::class)->name('survey');
